@@ -1,8 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:ital,wght@0,400;0,500;1,500&display=swap");
-*{
- scroll-behavior : smooth;
-}
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -183,7 +181,7 @@ img {
 /*===== PERFIL =====*/
 .perfil{
   position: relative;
-  background: white;
+  background: var(--container-color);
   height: 415px;
   border-radius: 2rem;
   padding: 1rem;
@@ -336,7 +334,7 @@ img {
 
 .skills__item{
   width: 1.5rem;
-  transition: transfrom .4s;
+  transition: 0.25s ease-in-out;
 }
 
 .skills__item:hover{
@@ -391,7 +389,7 @@ img {
 }
 
 .projects__img{
-  transition: tranfrom .4s;
+  transition: .30s ease-in-out;
 }
 
 .projects__name{
@@ -406,7 +404,7 @@ img {
 
 .projects__skills{
   width: 1rem;
-  transition: transfrom .4s;
+  transition: .25s ease-in-out;
 }
 
 .projects__skills:hover{
@@ -416,7 +414,6 @@ img {
 .projects__skills{
   width: max-content;
   height: 34px;
-  background-color: var(--black-color);
   padding-inline: .75rem;
   display: flex;
   align-items: center;
